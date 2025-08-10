@@ -10,6 +10,8 @@ CORS(app)
 def get_sentiment():
     sleep(random.randrange(2,4)) # Simulate a delay
     data = request.json
+    if data is None or "text" not in data:
+        return jsonify({"error": "Missing 'text' in request"}), 400
     text = data.get("text")
     print(text)
     print("Generating sentiment from:", text)
