@@ -13,5 +13,6 @@ yarn dev
 ## Running the backend
 
 ```bash
+cd backend
 python3 main.py
 ```
