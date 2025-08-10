@@ -14,5 +14,6 @@ yarn dev
 
 ```bash
 cd backend
+pip install flask
 python3 main.py
 ```
